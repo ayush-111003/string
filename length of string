@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{   //string must be defined as constant
+    const char *S = "Welcome";
+    int i;
+    for ( i = 0; S[i] != 0; i++)
+    {
+
+    }
+    cout<<" Length of string is "<<i<<endl;
+    delete S;
+    return 0 ;
+}
