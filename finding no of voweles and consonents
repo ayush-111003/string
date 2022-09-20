@@ -14,7 +14,7 @@ int main()
             ccount++;
     }
     cout<<A<<endl;
-    cout<<vcount<<endl;
-    cout<<ccount<<endl;
+    cout<<vcount<<endl;//vowels
+    cout<<ccount<<endl;//consonents
     return 0 ;
 }
