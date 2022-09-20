@@ -1,0 +1,57 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+
+
+int main()
+{ //****************************method 1********************************
+    char A[] = "nitin";
+    char B[6] ;
+    int i,j;
+    for ( i=0; A[i] != '\0'; i++)
+    {
+    }
+    i=i-1;
+    for ( j = 0; i>=0; i--,j++)
+    {
+        B[j] = A[i];
+    }
+    B[j] = '\0';
+    
+    int k,l;
+    for ( k=0,l = 0; A[k] != '\0',B[l] != '\0'; k++,l++)
+    {
+        if(A[k]!=B[l])
+            break;
+    }
+    
+    
+        cout<<" palindrome confirmed "<<endl;
+    
+    
+
+       
+    
+//****************************method 2********************************
+    char A[] = "madam";
+    char t;
+    int i , j;
+    for ( i = 0; A[i] != '\0'; i++)
+    {
+    }
+    i=i-1;
+    for ( j = 0;j<i; j++,i--)
+    {
+        if(A[j]!=A[i])
+        {   cout<<" palindrome not "<<endl;
+            break;
+        }    
+         
+    }
+   
+    cout<<"palindrome confirmes";
+    
+
+    
+    return 0;
+}
