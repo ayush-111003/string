@@ -5,7 +5,7 @@ int main()
 {   //string must be defined as constant
     const char *S = "Welcome";
     int i;
-    for ( i = 0; S[i] != 0; i++)
+    for ( i = 0; S[i] != '\0'; i++)
     {
 
     }
