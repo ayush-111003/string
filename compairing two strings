@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+//reversing a string
+
+int main()
+{
+    char A[] = "painter";
+    char B[] = "painting";
+    int i,j;
+    for ( i=0,j = 0; A[i] != '\0',B[j] != '\0'; i++,j++)
+    {
+        if(A[i]!=B[j])
+            break;
+    }
+    if(A[i]>B[j])
+        cout<<A<<" is greater than "<<B<<endl;
+    else if(A[i]==B[j])
+        cout<<A<<" and "<<B<<" are equal "<<endl;
+    else
+        cout<<B<<" is greater than "<<A<<endl;
+    
+
+    return 0;
+}
