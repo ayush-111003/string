@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+
+
+int main()
+{ 
+    char A[] = "FINDING";
+    int H[26] ={0} ;
+    for (int i = 0; A[i] != '\0'; i++)
+    {  
+        H[A[i]-65]++;//FOR SMALL CASE JUST REPLACE 65 WITH 97 EVERYWHERE
+    }
+    for (int i = 0; i < 26; i++)
+    {
+        if(H[i]>1)
+            cout<<char(i+65)<<" "<<H[i]<<endl;
+    }
+    
+    
+
+    
+    return 0;
+}
