@@ -1,0 +1,34 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{ //check for anagram in a string
+    char A[]="triangle";
+    char B[]="integral";
+    int i, H[26] = {0};
+    bool isAnagram = true;
+    for ( i = 0; A[i] != '\0' ; i++)//traversing A 
+    {
+        H[A[i] - 97]+=1;//increment in H
+        H[B[i] -97]-=1;//decrementing in H
+    }
+    for ( i = 0; i<26; i++)//traversing B
+    {   
+        if(H[i]!=0)//if H[i] is < 0 means it is not present in one of them so it is not a anagram
+        {
+            isAnagram = false;
+            break;//for coming out of the loop  it is not a anagram
+        }    
+        
+    }
+    // if(B[i]=='\0')//if the loop reaches the end with out coming out of the loop so it is anagram
+    //         cout<<" It is a anagram ";
+    if(isAnagram){
+        cout<<"anagram";
+    }
+    else{
+        cout<<"not anagram";
+    }
+   
+    return 0;
+}
