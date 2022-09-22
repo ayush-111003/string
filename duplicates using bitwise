@@ -1,0 +1,20 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{ 
+    char A[] = "finding";
+    long int H ,x ;
+    H=0;
+    for (int i = 0; A[i] != '\0'; i++)
+    {  
+        x=1;
+        x=x<<A[i]-97;
+        if((x&H)>0)//ANDing
+            cout<<A[i]<<" is a duplicate element "<<endl;
+        else
+            H = x|H;//turning the bit as on in H  
+    }
+   
+    return 0;
+}
